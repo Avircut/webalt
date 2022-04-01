@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    link(rel="stylesheet", href="css/style.min.css")
+    script(defer="defer" src="main.min.js")
+  body 
+    header.header 
+      .header__top-line
+        .top-line__contacts
+          a.top-line__phone(href="tel:") 8 (812) 123-45-67
+          span.top-line__shedule-days Работаем 7 дней в неделю
+          a.top-line__shedule-hours 9:00 — 18:00
+        .top-line__login
+          span.top-line__login-text Войти / Регистрация
+      nav.nav
+        .nav__logo.logo
+        .nav__controls
+          ul.nav__links
+            li.nav__link Понравилось
+            li.nav__link Личный кабинет
+            li.nav__link Настройки
+          .nav__cart
+          .nav__search
+    .wrapper
+      main.main
+
+      footer.footer

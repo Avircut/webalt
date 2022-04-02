@@ -1,12 +1,12 @@
 html,
 body {
     height: 100%;
-        //   @extend %AnPro-Regular;
-        //   color: $text;
+    color:$white;
         // position: relative;
         // overflow-x: hidden;
         // margin: 0 auto;
-        //   background-color: $background;
+    background-color: $background;
+    font-family: Montserrat, Arial, sans-serif;
 }
 .wrapper {
     display: flex;
@@ -22,19 +22,53 @@ body {
     flex: 0 0 auto;
 }
 .container{
-  // max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  &_mw-1410{
+    max-width: 1410px;
+  }
+  &_mw-1207{
+    max-width: 1207px;
+  }
+  &_mw-1277{
+    max-width: 1277px;
+  }
+  &_mw-1110{
+    max-width: 1110px;
+  }
 }
 
-// .title{
-//     @extend %AlGrey-Bold;
-//     font-size: 36px;
-//     line-height: 49px;
-//     padding: 0px 35px;
-//     border-bottom: 2px solid $blue;
-//     text-align: center;
-//     margin: 0 auto;
-//     margin-bottom: 56px;
-//     max-width: fit-content;
-// }
+.title{
+    font-size: 42px;
+    line-height: 51px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 56px;
+    max-width: fit-content;
+}
+.btn{
+    padding:15px;
+    padding-right:63px;
+    background:$white-orange;
+    min-width: 280px;
+    font-size: 16px;
+    font-weight: 400;
+    border:none;
+    position: relative;
+    text-align: left;
+    color:$white;
+    cursor: pointer;
+    z-index: 1;
+    &::after{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        content:url('../images/icons/btn-arrow.svg');
+        width:48px;
+        top:0;
+        bottom:0;
+        right:0;
+        background-color: $dark-orange;
+    }
+}

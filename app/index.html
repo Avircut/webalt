@@ -6,29 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer="defer" src="main.min.js"></script>
+    <script defer="defer" src="js/main.min.js"></script>
   </head>
   <body> 
     <header class="header"> 
-      <div class="header__top-line">
-        <div class="top-line__contacts"><a class="top-line__phone" href="tel:">8 (812) 123-45-67</a><span class="top-line__shedule-days">Работаем 7 дней в неделю</span><a class="top-line__shedule-hours">9:00 — 18:00</a></div>
-        <div class="top-line__login"><span class="top-line__login-text">Войти / Регистрация</span></div>
-      </div>
-      <nav class="nav">
-        <div class="nav__logo logo"></div>
-        <div class="nav__controls">
-          <ul class="nav__links">
-            <li class="nav__link">Понравилось</li>
-            <li class="nav__link">Личный кабинет</li>
-            <li class="nav__link">Настройки</li>
-          </ul>
-          <div class="nav__cart"></div>
-          <div class="nav__search"></div>
+      <div class="container container_mw-1410">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <div class="nav__logo logo"><a class="nav__logo-link" href="#"><img class="nav__logo-img" src="../images/logo/logo-mobile.svg" alt=""></a></div>
+            <div class="nav__burger-wrapper">
+              <div class="nav__burger burger"></div>
+            </div>
+            <div class="burger__menu-wrapper">
+              <button class="burger__menu-close-btn">
+                <ul class="burger__menu"></ul>
+              </button>
+            </div>
+          </nav>
+          <div class="header__banner">
+            <div class="header__title-box">
+              <p class="header__title-tag">E-commerce</p>
+              <h1 class="header__title">Интернет-магазин принесет вам максимум прибыли!</h1>
+            </div>
+            <div class="header__phone"><img class="header__img" src="../images/content/header-phone.png" alt=""></div><a class="header__btn-link" href="#">
+              <button class="header__btn btn">Заказать звонок </button></a><span class="header__small-text">Ответим на любой вопрос</span>
+          </div>
         </div>
-      </nav>
+      </div>
     </header>
     <div class="wrapper">
-      <main class="main"></main>
+      <main class="main">
+        <section class="stages">
+          <div class="container">
+            <div class="stages__inner">
+              <h2 class="stages__title">КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ</h2>
+              <ol class="stages__list">
+                <li class="stages__item"> <span class="stages__item-text">Анализ Целевой Аудитории</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+                <li class="stages__item"> <span class="stages__item-text">ПОДГОТОВКА ТЗ</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+                <li class="stages__item"> <span class="stages__item-text">ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+                <li class="stages__item"> <span class="stages__item-text">РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+                <li class="stages__item"> <span class="stages__item-text">НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+                <li class="stages__item"> <span class="stages__item-text">ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ</span>
+                  <button class="stages__expand-btn expand-btn"></button>
+                  <p class="stages__item-desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+        <section class="functions">
+          <div class="container">
+            <div class="functions__inner"> 
+              <div class="functions__item">
+                <div class="functions__img-wrapper"><img class="functions__logo" src="../images/content/functions-ya-logo.svg" alt=""><img class="functions__logo" src="../images/content/functions-sber-logo.svg" alt=""><img class="functions__logo" src="../images/content/functions-robo-logo.svg" alt=""></div>
+                <h4 class="functions__title">Принимайте платежи картой, с помощью удобных платежных систем!</h4>
+                <p class="functions__desc">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>

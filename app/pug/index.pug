@@ -6,26 +6,68 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
     link(rel="stylesheet", href="css/style.min.css")
-    script(defer="defer" src="main.min.js")
+    script(defer="defer" src="js/main.min.js")
   body 
     header.header 
-      .header__top-line
-        .top-line__contacts
-          a.top-line__phone(href="tel:") 8 (812) 123-45-67
-          span.top-line__shedule-days Работаем 7 дней в неделю
-          a.top-line__shedule-hours 9:00 — 18:00
-        .top-line__login
-          span.top-line__login-text Войти / Регистрация
-      nav.nav
-        .nav__logo.logo
-        .nav__controls
-          ul.nav__links
-            li.nav__link Понравилось
-            li.nav__link Личный кабинет
-            li.nav__link Настройки
-          .nav__cart
-          .nav__search
+      .container.container_mw-1410
+        .header__inner
+          nav.header__nav
+            .nav__logo.logo
+              a(href="#").nav__logo-link
+                img(src="../images/logo/logo-mobile.svg", alt="").nav__logo-img
+            .nav__burger-wrapper
+              .nav__burger.burger
+            .burger__menu-wrapper
+              button.burger__menu-close-btn
+                ul.burger__menu
+          .header__banner
+            .header__title-box
+              p.header__title-tag E-commerce
+              h1.header__title Интернет-магазин принесет вам максимум прибыли!
+            .header__phone
+              img(src="../images/content/header-phone.png", alt="").header__img
+            a(href="#").header__btn-link
+              button.header__btn.btn Заказать звонок 
+            span.header__small-text Ответим на любой вопрос
     .wrapper
       main.main
-
+        section.stages
+          .container
+            .stages__inner
+              h2.stages__title КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ
+              ol.stages__list
+                li.stages__item 
+                  span.stages__item-text Анализ Целевой Аудитории
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                li.stages__item 
+                  span.stages__item-text ПОДГОТОВКА ТЗ
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                li.stages__item 
+                  span.stages__item-text ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                li.stages__item 
+                  span.stages__item-text РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                li.stages__item 
+                  span.stages__item-text НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                li.stages__item 
+                  span.stages__item-text ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ
+                  button.stages__expand-btn.expand-btn
+                  p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+        section.functions
+          .container
+            .functions__inner 
+              .functions__item
+                .functions__img-wrapper
+                  img(src="../images/content/functions-ya-logo.svg", alt="").functions__logo
+                  img(src="../images/content/functions-sber-logo.svg", alt="").functions__logo
+                  img(src="../images/content/functions-robo-logo.svg", alt="").functions__logo
+                h4.functions__title Принимайте платежи картой, с помощью удобных платежных систем!
+                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
       footer.footer

@@ -1,3 +1,146 @@
-// @media(max-width: 1900px){
-
-// }
+@media(min-width: 400px){
+  .header{
+    &__phone{
+      width:227px;
+      height:300px;
+    }
+  }
+  .stages{
+    &__item-desc{
+      max-width: 100%;
+      width:80vw;
+    }
+  }
+}
+@media (min-width:600px) {
+  .header{
+    background: url(../images/header-bg-desktop.png);
+    background-size: 100% 100%;
+    &__banner{
+      height:100vh;
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+    &__title-box{
+      max-width: 300px;
+      margin-bottom: 165px;
+    }
+    &__small-text{
+      text-align: left;
+      margin-bottom: 7px;
+      font-weight: 400;
+      opacity: 1;
+    }
+    &__btn-link{
+      margin:0;
+      order:2;
+    }
+    &__phone{
+      order:3;
+      flex-basis: 80%;
+      width:50%;
+      &::after{
+        display: none;
+      }
+      &::before{
+        left:0;
+        top:unset;
+        bottom:0;
+        background-size: 100% 100%;
+        width:70%;
+      }
+    }
+  }
+  .stages{
+    &__list{
+      max-width: 500px;
+      align-self: center;
+    }
+  }
+  .cases{
+    &__title{
+      text-align: center;
+    }
+    &__list-container{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__item{
+      width:270px;
+      margin-right:5px;
+      margin-left:5px;
+    }
+  }
+  .contact{
+    &__form{
+      max-width: 350px;
+      align-self: center;
+    }
+  }
+  .footer{
+    &__inner{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__logo-link{
+      width: auto;
+      height: auto;
+    }
+    &__info{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__category{
+      padding-left:10px;
+      padding-right:10px;
+      text-align: center;
+      flex-basis: 50%;
+      &:first-of-type{
+        border-right: 1px solid rgba($white,.1);
+      }
+    }
+  }
+}
+@media (min-width:780px) {
+  .stages{
+    background-image: url(../images/functions-bg-desktop.png);
+    background-color: transparent;
+    background-size: 100% 100%;
+    color:$white;
+    &__list{
+      max-width: 600px;
+      display: flex;
+      padding-left: 0;
+      justify-content: center;
+      flex-wrap: wrap;
+      &::before{
+        border-radius: 11px;
+        opacity: .2;
+        background-image: repeating-linear-gradient(0deg, #ffffff, #ffffff 15px, transparent 15px, transparent 30px, #ffffff 30px), repeating-linear-gradient(90deg, #ffffff, #ffffff 15px, transparent 15px, transparent 30px, #ffffff 30px), repeating-linear-gradient(180deg, #ffffff, #ffffff 15px, transparent 15px, transparent 30px, #ffffff 30px), repeating-linear-gradient(270deg, #ffffff, #ffffff 15px, transparent 15px, transparent 30px, #ffffff 30px);
+        background-size: 0px 100%, 100% 9px, 9px 100% , 100% 9px;
+        background-position: 0 0, 0 0, 100% 0, 0 100%;
+        background-repeat: no-repeat;
+        left:0;
+        z-index: 0;
+        right:0;
+        bottom:0;
+        top:0;
+        width:unset;
+        height: unset;
+      }
+    }
+    &__item{
+      width:180px;
+      z-index: 1;
+    }
+    &__title{
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}

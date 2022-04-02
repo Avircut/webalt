@@ -16,3 +16,7 @@ acc.forEach( el => {
     }
   });
 })
+$('.clients__slider-container').slick({
+  arrows:true,
+  autoplay:false
+})

@@ -70,4 +70,95 @@ html(lang="en")
                   img(src="../images/content/functions-robo-logo.svg", alt="").functions__logo
                 h4.functions__title Принимайте платежи картой, с помощью удобных платежных систем!
                 p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+              .functions__item
+                img(src="../images/content/functions-secure.png", alt="").functions__single-image.functions__single-image_secure
+                h4.functions__title Принимайте картой, пустые нули !
+                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
+              .functions__item
+                .functions__img-wrapper.functions__img-wrapper_1s
+                  img(src="../images/content/1s-logo.png", alt="").functions__logo
+                h4.functions__title Интегрируем неинтегрируемое!
+                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
+        section.cases
+          .container
+            .cases__inner
+              h2.cases__title НАШИ КЕЙСЫ
+              .cases__list-container
+                .cases__item
+                  img(src="../images/content/cases-1.jpg", alt="").cases__img
+                  h5.cases__name Королевство цветов
+                  p.cases__type Интернет-магазин
+                .cases__item
+                  img(src="../images/content/cases-2.jpg", alt="").cases__img
+                  h5.cases__name Мастер климат
+                  p.cases__type Интернет-магазин
+                .cases__item
+                  img(src="../images/content/cases-3.jpg", alt="").cases__img
+                  h5.cases__name Новая аптека
+                  p.cases__type Интернет-магазин
+                .cases__item
+                  img(src="../images/content/cases-4.jpg", alt="").cases__img
+                  h5.cases__name Восток Тех Резерв
+                  p.cases__type Интернет-магазин
+              .cases__contact
+                .cases__contact-text Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консультацию!
+                .cases__contact-btn Оставить заявку
+        section.clients
+          .container
+            .clients__inner
+              h2.clients__title Наши клиенты
+              ol.clients__slider-container
+                li.clients__item
+                  img(src="../images/content/clients-1.svg", alt="").clients__img
+                li.clients__item
+                  img(src="../images/content/clients-2.svg", alt="").clients__img
+                li.clients__item
+                  img(src="../images/content/clients-3.svg", alt="").clients__img
+                li.clients__item
+                  img(src="../images/content/clients-4.svg", alt="").clients__img
+        section.contact
+          .container
+            .contact__inner
+              h2.contact__title Интернет-магазин, который приносит прибыль
+              .contact__benefits-box
+                h5.contact__benefits-title Получите бесплатно
+                ul.contact__benefits-list
+                  li.contact__benefits-item Личная косультация
+                  li.contact__benefits-item Стратегия запуска и продвижения
+                  li.contact__benefits-item Коммерческое предложение
+              p.contact__desc Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин
+              form.contact__form
+                input(type="text", placeholder="Имя").contact__input
+                input(type="tel", placeholder="+7 (000) 000-00-00").contact__input
+                textarea(placeholder="Расскажите о своей задаче").contact__input
+                input(type="checkbox", checked).contact__checkbox.checkbox#contact__checkbox
+                label(for="contact__checkbox").contact__checkbox-label.label Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.
+                img(src="../images/recaptcha.png", alt="").contact__recaptcha
+                input(type="submit" value="Отправить").contact__send-btn
       footer.footer
+        .container
+          .footer__inner
+            a(href="#").footer__logo-link
+              img(src="../images/logo/logo-footer.svg", alt="").footer__logo-img
+            .footer__category
+              h5.footer__cat-title Контакты
+              ul.footer__cat-list
+                li.footer__cat-item
+                  a(href="").footer__cat-link ул. Волочаевская, 8г
+                li.footer__cat-item
+                  a(href="").footer__cat-link +7 (4212)470-300
+                li.footer__cat-item
+                  a(href="").footer__cat-link +7 (4212) 25-30-85
+            .footer__category
+              h5.footer__cat-title Мы в соцсетях
+              ul.footer__cat-list
+                li.footer__cat-item
+                  a(href="").footer__cat-link Instagram
+                li.footer__cat-item
+                  a(href="").footer__cat-link Facebook
+                li.footer__cat-item
+                  a(href="").footer__cat-link Vkontakte
+            .footer__map
+              p.footer__map-text Найди нас на карте
+              .footer__map-wrapper
+                img(src="../images/content/footer-map.png", alt="").footer__map-img

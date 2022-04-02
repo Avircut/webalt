@@ -34,3 +34,17 @@
   font-weight: 300;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Roboto';
+  src: local('☺'),
+    url('../fonts/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('☺'),
+    url('../fonts/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}

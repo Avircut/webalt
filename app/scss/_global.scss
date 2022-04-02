@@ -46,29 +46,61 @@ body {
     margin-bottom: 56px;
     max-width: fit-content;
 }
-.btn{
-    padding:15px;
-    padding-right:63px;
-    background:$white-orange;
-    min-width: 280px;
-    font-size: 16px;
-    font-weight: 400;
-    border:none;
-    position: relative;
-    text-align: left;
-    color:$white;
+.slick-slider{
+  .slick-arrow{
+    position: absolute;
+    bottom:-105.5px;
+    font-size: 0;
+    border-radius: 50%;
+    border:3px solid $orange;
+    background-color: transparent;
+    width: 50.5px;
+    height: 50.5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image:url(../images/icons/slider-arrow.svg);
     cursor: pointer;
-    z-index: 1;
-    &::after{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        content:url('../images/icons/btn-arrow.svg');
-        width:48px;
-        top:0;
-        bottom:0;
-        right:0;
-        background-color: $dark-orange;
-    }
+    transition: all .5s ease-in-out;
+    &:hover{
+      background-color:$background ;
+      }
+  }
+  .slick-prev{
+    left:27%;
+    transform: rotate(180deg);
+    
+  }
+  .slick-next{
+    right:27%;
+  }
+}
+input[type=checkbox] {
+display: none;
+}
+.label{
+  display: flex;
+  font-size: 10px;
+  font-weight: 400;
+  cursor:pointer;
+}
+.label::before {
+  border-radius: 3px;
+  content:"";
+  transition: all .5s ease-in-out;
+  min-width:22px;
+  height: 22px;
+  border:1px solid $white;
+  background: transparent;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-right: 14px;
+}
+input[type=checkbox]:checked {
+  &+ label::before{
+    background-image: url(../images/icons/checkbox.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14.69px 11.44px;
+  }
 }

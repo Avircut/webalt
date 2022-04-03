@@ -15,15 +15,31 @@ html(lang="en")
             .nav__logo.logo
               a(href="#").nav__logo-link
                 img(src="../images/logo/logo-mobile.svg", alt="").nav__logo-img
+            .nav__call
+              button.nav__call-btn Заказать звонок
+              a(href="tel:+234234234").nav__call-phone +7 (4212) 25-30-85
+            ul.nav__menu
+              a(href="").nav__menu-link
+                li.nav__menu-item О студии
+              a(href="").nav__menu-link
+                li.nav__menu-item Портфолио
+              a(href="").nav__menu-link
+                li.nav__menu-item Наши услуги
+              a(href="").nav__menu-link
+                li.nav__menu-item Новости
+              a(href="").nav__menu-link
+                li.nav__menu-item Отзывы
+              a(href="").nav__menu-link
+                li.nav__menu-item Контакты
             .nav__burger-wrapper
               .nav__burger.burger
             .burger__menu-wrapper
-              button.burger__menu-close-btn
-                ul.burger__menu
+              ul.burger__menu
           .header__banner
             .header__title-box
               p.header__title-tag E-commerce
               h1.header__title Интернет-магазин принесет вам максимум прибыли!
+              p.header__desc Рассказываем что такое интернет магазин и зачем это нужно.
             .header__phone
               img(src="../images/content/header-phone.png", alt="").header__img
             a(href="#").header__btn-link
@@ -36,51 +52,76 @@ html(lang="en")
             .stages__inner
               h2.stages__title КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ
               ol.stages__list
-                li.stages__item 
-                  span.stages__item-text Анализ Целевой Аудитории
+                li.stages__item
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-1.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text Анализ Целевой Аудитории
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-                li.stages__item 
-                  span.stages__item-text ПОДГОТОВКА ТЗ
+                li.stages__item
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-2.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text ПОДГОТОВКА ТЗ
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-                li.stages__item 
-                  span.stages__item-text ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА
+                li.stages__item
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-3.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-                li.stages__item 
-                  span.stages__item-text РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА
+                li.stages__item.stages__item_reverse-4
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-4.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-                li.stages__item 
-                  span.stages__item-text НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА
+                li.stages__item.stages__item_reverse-5
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-5.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-                li.stages__item 
-                  span.stages__item-text ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ
+                li.stages__item.stages__item_reverse-6
+                  .stages__img-wrapper
+                    img(src="../images/icons/stages-6.svg", alt="").stages__img
+                  span(data-replace="Подробнее").stages__item-text ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ
                   button.stages__expand-btn.expand-btn
                   p.stages__item-desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
         section.functions
-          .container
+          .container.container_mw-1277
             .functions__inner 
-              .functions__item
-                .functions__img-wrapper
-                  img(src="../images/content/functions-ya-logo.svg", alt="").functions__logo
-                  img(src="../images/content/functions-sber-logo.svg", alt="").functions__logo
-                  img(src="../images/content/functions-robo-logo.svg", alt="").functions__logo
-                h4.functions__title Принимайте платежи картой, с помощью удобных платежных систем!
-                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
-              .functions__item
-                img(src="../images/content/functions-secure.png", alt="").functions__single-image.functions__single-image_secure
-                h4.functions__title Принимайте картой, пустые нули !
-                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
-              .functions__item
-                .functions__img-wrapper.functions__img-wrapper_1s
-                  img(src="../images/content/1s-logo.png", alt="").functions__logo
-                h4.functions__title Интегрируем неинтегрируемое!
-                p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
+              .functions__item.functions__item_pay.mix
+                .functions__phone
+                  img(src="../images/content/functions-1.png", alt="").functions__phone-img
+                .functions__text-block
+                  h4.functions__title Принимайте платежи картой, с помощью удобных платежных систем!
+                  p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.
+                  .functions__img-wrapper
+                    .functions__logo.functions__logo_ya
+                    .functions__logo.functions__logo_sber
+                    .functions__logo.functions__logo_robo
+              .functions__item.functions__item_security.mix
+                .functions__phone
+                  img(src="../images/content/functions-2.png", alt="").functions__phone-img
+                .functions__text-block
+                  img(src="../images/content/functions-secure.png", alt="").functions__single-image
+                  h4.functions__title Принимайте картой, пустые нули !
+                  p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
+              .functions__item.functions__item_crm.mix
+                .functions__phone
+                  img(src="../images/content/functions-3.png", alt="").functions__phone-img
+                .functions__text-block
+                  h4.functions__title Интегрируем неинтегрируемое!
+                  p.functions__desc Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно.
+                  .functions__img-wrapper.functions__img-wrapper_1s
+                    img(src="../images/content/1s-logo.png", alt="").functions__logo
+            .functions__controls
+              button(data-filter=".functions__item_security").functions__control-btn Безопасность
+              button(data-filter=".functions__item_crm").functions__control-btn CRM & 1C
+              button(data-filter=".functions__item_pay").functions__control-btn Онлайн оплата
         section.cases
-          .container
+          .container.container_mw-1410
             .cases__inner
               h2.cases__title НАШИ КЕЙСЫ
               .cases__list-container
@@ -101,7 +142,8 @@ html(lang="en")
                   h5.cases__name Восток Тех Резерв
                   p.cases__type Интернет-магазин
               .cases__contact
-                .cases__contact-text Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консультацию!
+                img(src="../images/icons/contact-icon.svg", alt="").cases__contact-icon
+                p.cases__contact-text Оставьте свою заявку, чтобы получить #[span.cases__contact_caps БЕСПЛАТНУЮ] консультацию!
                 .cases__contact-btn Оставить заявку
         section.clients
           .container
@@ -109,24 +151,42 @@ html(lang="en")
               h2.clients__title Наши клиенты
               ol.clients__slider-container
                 li.clients__item
-                  img(src="../images/content/clients-1.svg", alt="").clients__img
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-1.svg", alt="").clients__img.clients__img_rivera
                 li.clients__item
-                  img(src="../images/content/clients-2.svg", alt="").clients__img
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-2.svg", alt="").clients__img.clients__img_apteka
                 li.clients__item
-                  img(src="../images/content/clients-3.svg", alt="").clients__img
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-3.svg", alt="").clients__img.clients__img_smart
                 li.clients__item
-                  img(src="../images/content/clients-4.svg", alt="").clients__img
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-4.svg", alt="").clients__img.clients__img-tomato
+                li.clients__item
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-1.svg", alt="").clients__img.clients__img_rivera
+                li.clients__item
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-2.svg", alt="").clients__img.clients__img_apteka
+                li.clients__item
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-3.svg", alt="").clients__img.clients__img_smart
+                li.clients__item
+                  .clients__img-wrapper
+                    img(src="../images/content/clients-4.svg", alt="").clients__img.clients__img-tomato
+      footer.footer
         section.contact
-          .container
+          .container.container_mw-1110
             .contact__inner
-              h2.contact__title Интернет-магазин, который приносит прибыль
-              .contact__benefits-box
-                h5.contact__benefits-title Получите бесплатно
-                ul.contact__benefits-list
-                  li.contact__benefits-item Личная косультация
-                  li.contact__benefits-item Стратегия запуска и продвижения
-                  li.contact__benefits-item Коммерческое предложение
-              p.contact__desc Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин
+              .contact__info-box
+                h2.contact__title Интернет-магазин, который приносит прибыль
+                .contact__benefits-box
+                  h5.contact__benefits-title Получите бесплатно
+                  ul.contact__benefits-list
+                    li.contact__benefits-item Личная косультация
+                    li.contact__benefits-item Стратегия запуска и продвижения
+                    li.contact__benefits-item Коммерческое предложение
+                p.contact__desc Оставьте заявку, чтобы узнать, как создать свой Интернет-магазин
               form.contact__form
                 input(type="text", placeholder="Имя").contact__input
                 input(type="tel", placeholder="+7 (000) 000-00-00").contact__input
@@ -135,7 +195,6 @@ html(lang="en")
                 label(for="contact__checkbox").contact__checkbox-label.label Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.
                 img(src="../images/recaptcha.png", alt="").contact__recaptcha
                 input(type="submit" value="Отправить").contact__send-btn
-      footer.footer
         .container
           .footer__inner
             a(href="#").footer__logo-link

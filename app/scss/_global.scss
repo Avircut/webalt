@@ -66,12 +66,12 @@ body {
       }
   }
   .slick-prev{
-    left:27%;
+    right:51%;
     transform: rotate(180deg);
     
   }
   .slick-next{
-    right:27%;
+    left:51%;
   }
 }
 input[type=checkbox] {
@@ -102,5 +102,39 @@ input[type=checkbox]:checked {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14.69px 11.44px;
+  }
+}
+.fancybox__content{
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  background:#262626;
+  padding:60px 53px;
+  cursor: default;
+  .stages__popup-title{
+    font-size: 26px;
+    line-height: 41px;
+    font-weight: 600;
+    color:$white;
+    margin-bottom: 30px;
+    cursor:text;
+  }
+  .stages__popup-desc{
+    font-size: 18px;
+    line-height: 28.5px;
+    color:$white;
+    font-weight: 400;
+    cursor:text;
+  }
+  .carousel__button.is-close{
+    right:-54px;
+    cursor: pointer;
+    top:-54px;
+    width: 43px;
+    height: 43px;
+    svg{
+      width: 43px;
+      height: 43px;
+    }
   }
 }

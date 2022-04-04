@@ -2,9 +2,6 @@ html,
 body {
     height: 100%;
     color:$white;
-        // position: relative;
-        // overflow-x: hidden;
-        // margin: 0 auto;
     background-color: $background;
     font-family: Montserrat, Arial, sans-serif;
 }
@@ -38,14 +35,8 @@ body {
   }
 }
 
-.title{
-    font-size: 42px;
-    line-height: 51px;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 56px;
-    max-width: fit-content;
-}
+// Слайдер
+
 .slick-slider{
   .slick-arrow{
     position: absolute;
@@ -74,6 +65,9 @@ body {
     left:51%;
   }
 }
+
+// Стилизация чекбоксов
+
 input[type=checkbox] {
 display: none;
 }
@@ -97,13 +91,16 @@ display: none;
   margin-right: 14px;
 }
 input[type=checkbox]:checked {
-  &+ label::before{
+  & + label::before{
     background-image: url(../images/icons/checkbox.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 14.69px 11.44px;
   }
 }
+
+// Попапы
+
 .fancybox__content{
   max-width: 700px;
   display: flex;

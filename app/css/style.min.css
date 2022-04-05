@@ -3590,10 +3590,6 @@ input[type=checkbox]:checked + label::before {
   }
 }
 @media (min-width: 1600px) {
-  .header__nav {
-    padding-left: 180px;
-    padding-right: 180px;
-  }
   .header__nav .nav__menu-item {
     margin-left: 30px;
   }
@@ -3606,6 +3602,12 @@ input[type=checkbox]:checked + label::before {
   .clients__item-count {
     right: -4px;
     font-size: 190px;
+  }
+}
+@media (min-width: 1700px) {
+  .header__nav {
+    padding-left: 180px;
+    padding-right: 180px;
   }
 }
 @media (max-height: 600px) {

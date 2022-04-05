@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <script defer="defer" src="js/main.min.js"></script>
+    <script defer src="js/main.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body> 
     <header class="header"> 
@@ -206,7 +207,10 @@
                 <input class="contact__input" type="tel" placeholder="+7 (000) 000-00-00">
                 <textarea class="contact__input" placeholder="Расскажите о своей задаче"></textarea>
                 <input class="contact__checkbox checkbox" type="checkbox" checked id="contact__checkbox">
-                <label class="contact__checkbox-label label" for="contact__checkbox">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</label><img class="contact__recaptcha" src="images/recaptcha.png" alt="">
+                <label class="contact__checkbox-label label" for="contact__checkbox">Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</label>
+                <div class="contact__recaptcha">
+                  <div class="g-recaptcha" data-sitekey="6LckX9USAAAAAHRrJ4_gPyCxfhmycjqhwY-1Sh5l" style="transform:scale(0.66);-webkit-transform:scale(0.66);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
+                </div>
                 <input class="contact__send-btn" type="submit" value="Отправить">
               </form>
             </div>

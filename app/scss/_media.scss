@@ -218,6 +218,9 @@
     &__single-image{
       display: none;
     }
+    &__logo:first-of-type{
+      margin-left: 0;
+    }
     &__logo{
       margin:10px;
       background-size: contain;
@@ -512,7 +515,6 @@
       }
       .stages__item-text::before{
         color:$white;
-        text-decoration: underline;
       }
       .stages__item-text::after{
         opacity: 1;
@@ -553,9 +555,9 @@
       &::before{
         position: absolute;
         left:0;
+        text-decoration: underline;
         display: flex;
         justify-content: center;
-        align-items: center;
         width:100%;
         height: 100%;
         content: attr(data-replace);
@@ -577,7 +579,6 @@
         position: absolute;
         top:0;
         bottom: 0;
-        margin:auto;
         right:55px;
         transition: .2s all ease-in-out;
       }
@@ -714,6 +715,12 @@
     }
     &__phone{
       margin-top:100px;
+    }
+    &__btn-link{
+      margin-left: 0;
+    }
+    &__small-text{
+      margin-left: 0;
     }
   }
   .stages{

@@ -6,7 +6,8 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Document
     link(rel="stylesheet", href="css/style.min.css")
-    script(defer="defer" src="js/main.min.js")
+    script(defer, src="js/main.min.js")
+    script(src="https://www.google.com/recaptcha/api.js", async, defer)
   body 
     header.header 
       .container.container_mw-1410
@@ -193,7 +194,8 @@ html(lang="en")
                 textarea(placeholder="Расскажите о своей задаче").contact__input
                 input(type="checkbox", checked).contact__checkbox.checkbox#contact__checkbox
                 label(for="contact__checkbox").contact__checkbox-label.label Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.
-                img(src="images/recaptcha.png", alt="").contact__recaptcha
+                .contact__recaptcha
+                  .g-recaptcha(data-sitekey="6LckX9USAAAAAHRrJ4_gPyCxfhmycjqhwY-1Sh5l", style="transform:scale(0.66);-webkit-transform:scale(0.66);transform-origin:0 0;-webkit-transform-origin:0 0;")
                 input(type="submit" value="Отправить").contact__send-btn
         .container
           .footer__inner
